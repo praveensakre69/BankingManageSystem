@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <style>
+       body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+       }
+       nav{
+        background-color: #0f172a;
+        color:  #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1f2933;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+       }
+       nav a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+       }
+       nav a :hover{
+        background-color: #374151;
+       }
+       @media(max-width:768px)
+       {
+        nav{
+            flex-direction: coloumn;
+            gap:10px;
+        }
+        
+       }
+       .container{
+        display: flex;
+       }
+       .sidebar {
+        width: 240px;
+        background-color: #020617; /* Dark banking tone */
+        min-height: 300px;
+        padding-top: 20px;
+        }
+       .sidebar a{
+        display: block;
+        color: #d1d5db;
+        text-decoration: none;
+        padding: 12px 20px;
+        font-size: 15px;
+       }
+       .sidebar a:hover{
+        background-color: #374151;
+        color: #ffffff;
+       }
+       .uses
+       {
+         border: 2px solid ;
+        width: 100%;
+        height: 1500px;
+       }
+       .history{
+        border: 2px solid;
+        height: 300px;
+        text-align: center;
+       }
+       .debitcards{
+        border: 2px solid;
+        height: 300px;
+         text-align: center;
+
+       }
+       .upi{
+        border: 2px solid;
+        height: 300px;
+         text-align: center;
+
+
+       }
+       .credit{
+        border: 2px solid;
+        height: 300px;
+        text-align: center;
+
+
+       }
+       .loans{
+        border: 2px solid;
+        height: 300px;
+        text-align: center;
+
+       }
+       
+       .footer{
+        display: flex;
+        background-color: #020617;
+        color: #cbd5f5;
+        justify-content: space-between;
+        padding: 30px 40px;
+         flex-wrap: wrap;
+       }
+       .footer-container{
+        /* border: 2px solid white; */
+        width: 850px;
+        /* height: 300px; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+       
+
+       .footer-section h4{
+        color: #ffffff;
+        margin-bottom: 12px;
+       }
+       
+       .footer-section a{
+        display: block;
+        color: #cbd5f5;
+        text-decoration: none;
+        margin-bottom: 6px;
+        font-size: 14px;
+       }
+    
+       .footer-section a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+       }
+       
+       .footer-bottom{
+        text-align: center;
+        padding: 12px;
+        background-color: #0f172a;
+        font-size: 14px;
+        color: #94a3b8;
+       } 
+    </style>
+</head>
+<body>
+ <nav>
+        <a href="Home.jsp">Profile Details</a>
+        <a href="#">Debit Card</a>
+        <a href="#">Passbook</a>
+        <a href="#">UPI</a>
+        <a href="#">Transactions</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="">Loans</a>
+            <a href="">Credit services</a>
+            <a href="">Security settings</a>
+            <a href="">Alert & Notifications</a>
+            <a href="">Help & Support</a>
+            <a href="">Logout</a>
+        </div>
+        
+        
+        <div class="uses">
+            <div class="history">
+              <h1>Banking Solutions</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempore nesciunt voluptatum vel. Exercitationem illo, fuga adipisci maiores 
+                    tempora quod illum soluta distinctio eveniet iure? Illo, sed. Possimus, dolores 
+                    illo ducimus harum dolorum, dolor, inventore tempore vitae voluptatibus sint 
+                    asperiores obcaecati exercitationem consectetur? Doloremque a accusantium
+                    molestiae doloribus qui. Vel, rerum?
+             </p>
+            </div>
+            
+            <div class="debitcards">
+              <h1>Apply for Debit Cards</h1>
+              <p>A debit card is used to make purchases directly 
+                from your bank account, withdraw cash from ATMs,
+                 and pay bills online. It allows you to spend only 
+                 the money you have, helping you manage your finances 
+                 effectively.
+              </p>
+            </div>
+
+             <div class="upi">
+              <h1>Uses of Upi</h1>
+              <p>Digital payment system for inter-bank transfer in India </p>
+             </div>
+
+             <div class="credit">
+              <h1>Credits</h1>
+              <p>Apply for credit cards</p>
+             </div>
+
+             <div class="loans">
+              <h1>Loans</h1>
+              <p>Apply for Loans</p>
+             </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>SafeGaurd</h4>
+                <p>Secure digital banking platform <br>
+                   providing safe and relieble <br>
+                   financial service
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Account Details</a>
+                <a href="#">Transactions</a>
+                <a href="#">Loans</a>
+                <a href="#">Security</a>
+
+            </div>
+            <div class="footer-section">
+                <h4>Security</h4>
+                <p>Two factor Authonticaton</p>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <p>Email: support@safegaurd.com</p>
+                <p>Helpline: 1800-123-456</p>
+                <p>24/7 Customer Care</p>
+
+             </div>
+        </div>
+
+        <div class="footer-bottom">
+           © 2025 Shield Bank. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    
+
+</body>
+</html>
